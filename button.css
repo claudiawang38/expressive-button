@@ -1,0 +1,341 @@
+/* ==================================PUBLIC================================== */
+.button-container a:hover{
+	color:black;
+cursor: pointer;
+}
+#btnrow1, #btnrow2, #btnrow3, #btnrow4, #btnrow5, #btnrow6, #btnrow7, #btnrow8{
+
+	width: 18em;
+	height:18em;
+	margin-bottom: 0.5em;
+  margin-left: 1em;
+}
+
+
+.button-custom {
+
+	border: none;
+	color: black;
+
+	/* margin-top: 5em; */
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+
+	position: absolute;
+
+	top: 40%;
+	left: 30%;
+	/* margin: -2em 0 0 -1em; */
+	/* transform: translate(-50%, -50%); */
+}
+
+/* .button-container a{
+color: white; !important
+} */
+.button-container {
+	position: relative;
+	min-height: 14em;
+
+}
+
+
+
+
+/* ==================================TIMID================================== */
+
+
+
+.button-timid-visible {
+	padding: 1em 2em;
+	transition: margin 0.5s ease;
+	background-color: #16b2a6;
+	pointer-events: none;
+}
+
+.button-timid-underlayer {
+	border: none;
+	padding: 1.9em 3em;
+}
+
+
+
+
+.button-timid-underlayer:hover ~ .button-timid-visible{
+	margin-left: -5em !important;
+	margin-top: -4em !important;
+}
+
+
+
+/* ==================================NEEDY================================== */
+
+.button-needy-visible{
+
+	padding: 1em 2em;
+	/* transition: all 0.1s ease-in-out; */
+	background-color: #16b2a6;
+	pointer-events: none;
+
+}
+
+
+.button-needy-underlayer{
+	left: 35px;
+	top: 40px;
+	padding: 5em 5.5em;
+}
+
+/* ==================================ITHCY================================== */
+
+
+.button-itchy {
+	padding: 1em 2em;
+	background-color: #16b2a6;
+	border: none;
+	animation-duration: .3s;
+	animation-timing-function: ease-in-out;
+	/* animation-fill-mode: forwards; */
+	animation-iteration-count: infinite;
+
+
+}
+
+
+.button-itchy:active {
+	animation-name: jittery;
+}
+@keyframes jittery {
+	10% {
+		transform: translate(-2px, -3px) ;
+	}
+	20% {
+		transform: translate(3px, 2px) ;
+	}
+	30% {
+		transform: translate(-4px, -5px) ;
+	}
+	40% {
+		transform: translate(2px, 3px) ;
+	}
+	50% {
+		transform: translate(-1px, -2px) ;
+	}
+	60% {
+		transform: translate(0px, 3px) ;
+	}
+	70% {
+		transform: translate(-2px, -4px);
+	}
+	80% {
+		transform: translate(3px, 5px);
+	}
+	90% {
+		transform: translate(-5px, -3px);
+	}
+	100% {
+		transform: translate(3px, 1px);
+	}
+}
+
+/* ==================================STUBBORN================================== */
+.button-stubborn {
+	padding: 1em 2em;
+	background-color: #16b2a6;
+	border: none;
+
+}
+
+.button-stubborn-container .button-custom{
+	left: 24% !important;
+}
+
+/* ==================================SCARY================================== */
+
+.button-scared-visible:active {
+	margin-left: 4em !important;
+	margin-top: 5em !important;
+}
+.button-scared-visible {
+	padding: 1em 2em;
+	background-color: #16b2a6;
+	border: none;
+	animation-duration: .3s;
+	animation-timing-function: ease-in-out;
+	/* animation-fill-mode: forwards; */
+	animation-iteration-count: infinite;
+
+
+}
+
+
+.button-scared-visible:hover {
+	animation-name: scared;
+}
+@keyframes scared {
+	10% {
+		transform: translate(-1px, -1px) ;
+	}
+	20% {
+		transform: translate(1px, 2px) ;
+	}
+	30% {
+		transform: translate(-1px, -2px) ;
+	}
+	40% {
+		transform: translate(1px, 2px) ;
+	}
+	50% {
+		transform: translate(-1px, -2px) ;
+	}
+	60% {
+		transform: translate(0px, 1px) ;
+	}
+	70% {
+		transform: translate(-1px, -1px);
+	}
+	80% {
+		transform: translate(1px, 2px);
+	}
+	90% {
+		transform: translate(-1px, -1px);
+	}
+	100% {
+		transform: translate(2px, 1px);
+	}
+}
+/* ==================================COLD================================== */
+
+.button-cold {
+	padding: 1em 2em;
+	background-color: #16b2a6;
+	border: none;
+	-webkit-transition: padding 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+	-moz-transition: scale 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+
+	-o-transition: padding 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+
+	transition:padding 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+
+	animation-duration: .3s;
+	animation-timing-function: ease-in-out;
+	/* animation-fill-mode: forwards; */
+	animation-iteration-count: infinite;
+
+}
+.button-cold:active{
+	margin-top: 0.5em;
+	margin-left: 1em;
+	background-color: #729BCB;
+	padding: 0.5em 1em;
+
+	animation-name: scared;
+}
+@keyframes scared {
+	10% {
+		transform: translate(-1px, -1px) ;
+	}
+	20% {
+		transform: translate(1px, 2px) ;
+	}
+	30% {
+		transform: translate(-1px, -2px) ;
+	}
+	40% {
+		transform: translate(1px, 2px) ;
+	}
+	50% {
+		transform: translate(-1px, -2px) ;
+	}
+	60% {
+		transform: translate(0px, 1px) ;
+	}
+	70% {
+		transform: translate(-1px, -1px);
+	}
+	80% {
+		transform: translate(1px, 2px);
+	}
+	90% {
+		transform: translate(-1px, -1px);
+	}
+	100% {
+		transform: translate(2px, 1px);
+	}
+}
+/* ==================================HOT================================== */
+
+.button-hot {
+	padding: 1em 2em;
+	background-color: #16b2a6;
+	border: none;
+	-webkit-transition: padding 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+	-moz-transition: scale 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+
+	-o-transition: padding 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+
+	transition:padding 1s ease-out,
+	margin-top 1s ease-out,
+	margin-left 1s ease-out,
+	background-color 1s ease-out;
+}
+
+.button-hot:active{
+	margin-top: 0em;
+	margin-left: -2em;
+	background-color: #eb4e36;
+	padding: 2em 4em;
+}
+
+
+
+/* ==================================LAZY================================== */
+.button-lazy{
+	padding: 1em 2em;
+	background-color: #16b2a6;
+	border: none;
+	box-shadow:inset 0 -1em 0 -0.6em rgba(0,0,0,0.17);
+	-webkit-transition: box-shadow 1s ease-out,
+	margin-top 1s ease-out;
+
+
+	-moz-transition: box-shadow 1s ease-out,
+	margin-top 1s ease-out;
+
+
+	-o-transition: box-shadow 1s ease-out,
+	margin-top 1s ease-out;
+
+
+	transition:box-shadow 1s ease-out,
+	margin-top 1s ease-out;
+
+}
+
+.button-lazy:active{
+	margin-top: 0.3em;
+	box-shadow:inset 0 0 0 0 rgba(0,0,0,0.17);
+
+}
